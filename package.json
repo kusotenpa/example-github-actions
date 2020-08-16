@@ -5,11 +5,12 @@
   "repository": "git@github.com:kusotenpa/example-github-actions.git",
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc --reporter=html --reporter=text mocha",
     "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "7.6.0",
-    "mocha": "8.1.1"
+    "mocha": "8.1.1",
+    "nyc": "15.1.0"
   }
 }
