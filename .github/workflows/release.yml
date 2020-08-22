@@ -23,3 +23,5 @@ jobs:
           echo "${{github.event.inputs.version}}"
           git config user.name "GitHub Action"
           npm version ${{github.event.inputs.version}}
+          echo "${{npm view . version}}"
+          git push origin v${{npm view . version}}
