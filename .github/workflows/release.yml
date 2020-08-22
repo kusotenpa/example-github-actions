@@ -30,4 +30,3 @@ jobs:
         run: |
           yarn version --new-version ${{steps.version.outputs.version}}
           git tag
-          # git push origin v${{npm view . version}}
