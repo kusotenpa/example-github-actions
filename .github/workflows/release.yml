@@ -29,4 +29,4 @@ jobs:
       - name: Foo
         run: |
           yarn version --new-version ${{steps.version.outputs.version}}
-          git tag
+          git push origin v${{steps.version.outputs.version}}
