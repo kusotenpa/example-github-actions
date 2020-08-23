@@ -1,6 +1,6 @@
 {
   "name": "example-github-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:kusotenpa/example-github-actions.git",
   "license": "MIT",
